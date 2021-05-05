@@ -5,7 +5,7 @@ int main()
 	int a,b,c;
 	cout<<"enter sides of triangle\n";
 	cin>>a>>b>>c;
-	if(a>b>c)
+	if(a==b==c)
 	{
 		cout<<"this triangle equilateral triangle\n";
 	}
@@ -13,10 +13,14 @@ int main()
 	{
 		cout<<"this triangle is scalene triangle\n";
 	}
-	else(a>b!=c)
+	else
 	{
-		cout<<"this triangle is isoceles triangle\n";
+		if((a == b != c) || (a != b == c))
+		{
+			cout<<"isosceles triangle\n";
+		}
 	}
+
 	return 0;
 }
 
